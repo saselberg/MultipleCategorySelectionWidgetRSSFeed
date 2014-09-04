@@ -54,7 +54,7 @@ class mcswrf_widget extends WP_Widget {
 
       $rssLink = get_bloginfo('url') . "?feed=rss2";
       if( isset( $_SESSION[ 'wpmm_cats' ] ) ){
-         $rssLink .= "&cate".$_SESSION['wpmm_cats'];
+         $rssLink .= "&cat=".$_SESSION['wpmm_cats'];
       }
       
       if( isset( $_SESSION[ 'wpmm_search_vars' ] ) && strtolower($_SESSION[ 'wpmm_search_vars' ]) == 'and' ){
